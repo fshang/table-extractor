@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Extractor</title>
+  <script src="https://kit.fontawesome.com/eb0a0cd9b1.js" crossorigin="anonymous"></script>
+  <style>
+    body { width: 400px; padding: 10px; font-family: Arial, sans-serif; }
+    button { margin: 5px; padding: 10px; border: none; background-color: #f0f0f0; cursor: pointer; }
+    button:hover { background-color: #e0e0e0; }
+    #output { margin-top: 10px; overflow: auto; max-height: 300px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  </style>
+</head>
+<body>
+  <button id="extractBtn"><i class="fas fa-table"></i> Table Data</button>
+  <button id="copyBtn"><i class="fas fa-copy"></i> Copy Data</button>
+  <button id="clearBtn"><i class="fas fa-trash"></i> Clear Data</button>
+  <div id="output"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

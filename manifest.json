@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Table Extractor",
+  "version": "1.0",
+  "description": "Extract table data from web pages",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://kit.fontawesome.com; object-src 'self'"
+}
